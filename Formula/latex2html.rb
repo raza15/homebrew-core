@@ -26,15 +26,9 @@ class Latex2html < Formula
       \\documentclass{article}
       \\usepackage[utf8]{inputenc}
       \\title{Experimental Setup}
-      \\date{November 2016}
-      \\usepackage{natbib}
-      \\usepackage{graphicx}
+      \\date{\\today}
       \\begin{document}
       \\maketitle
-
-      \\section{Experimental Setup}
-        \\textbf{it works!}
-
       \\end{document}
     EOS
     system "#{bin}/latex2html", "test.tex"
